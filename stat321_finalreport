@@ -46,6 +46,7 @@ To illustrate the main relationship of interest, a scatterplot is provided below
 # remove rows with NAs
 new_df_clean <- na.omit(new_df)
 
+### lmk which plot you think works best
 # generate the scatterplot
 ggplot(new_df_clean, aes(x = land_use, y = total_count, color = land_use)) +
   geom_jitter(width = 0.3) +
